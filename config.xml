@@ -15,6 +15,7 @@
     <author href="http://seventhqueen.com" email="dev.george@seventhqueen.com">
         SeventhQueen Team
     </author>
+    
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -76,6 +77,4 @@
     <content src="http://seventhqueen.com/themes/kleo" />
     <access origin="*" subdomains="true" />
     
-    </platform>
-
 </widget>
