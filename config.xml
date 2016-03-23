@@ -1,23 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.seventhqueen.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    
+    <name>Kleo</name>
+    <description>Kleo App version </description>
+    <author email="dev.george@seventhqueen.com" href="http://www.SeventhQueen.com">SeventhQueen</author>
 
-<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.kleo.app"
-        version   = "1.0.0">
-
-    <name>Kleo Theme</name>
-
-    <description>
-        This is the App version of the our awsome Kleo theme.
-    </description>
-
-    <author href="http://seventhqueen.com" email="dev.george@seventhqueen.com">
-        SeventhQueen Team
-    </author>
+    <feature name="http://api.phonegap.com/1.0/device" />
     
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
