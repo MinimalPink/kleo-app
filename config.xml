@@ -1,70 +1,52 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.seventhqueen.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.seventhqueen.kleo" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     
     <name>Kleo</name>
-    <description>Kleo App version </description>
+    <description>Kleo app version</description>
     <author email="dev.george@seventhqueen.com" href="http://www.SeventhQueen.com">SeventhQueen</author>
 
+    <preference name="phonegap-version" value="3.3.0" />
     <feature name="http://api.phonegap.com/1.0/device" />
     
-    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
-    <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
-    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
-    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
-    <!-- Plugins -->
-
-    <!-- Core plugins -->
-    <plugin name="org.apache.cordova.battery-status" />
-    <plugin name="org.apache.cordova.camera" />
-    <plugin name="org.apache.cordova.media-capture" />
-    <plugin name="org.apache.cordova.console" />
-    <plugin name="org.apache.cordova.contacts" />
-    <plugin name="org.apache.cordova.device" />
-    <plugin name="org.apache.cordova.device-motion" />
-    <plugin name="org.apache.cordova.device-orientation" />
-    <plugin name="org.apache.cordova.dialogs" />
-    <plugin name="org.apache.cordova.file" />
-    <plugin name="org.apache.cordova.file-transfer" />
-    <plugin name="org.apache.cordova.geolocation" />
-    <plugin name="org.apache.cordova.globalization" />
-    <plugin name="org.apache.cordova.inappbrowser" />
-    <plugin name="org.apache.cordova.media" />
-    <plugin name="org.apache.cordova.network-information" />
-    <plugin name="org.apache.cordova.splashscreen" />
-    <plugin name="org.apache.cordova.vibration" />
-
-
-    <!-- Define app icon for each platform. -->
-    <icon src="icon.png" />
-    <icon src="res/icon/android/icon-36-ldpi.png"   platform="android"    gap:qualifier="ldpi" />
-    <icon src="res/icon/android/icon-48-mdpi.png"   platform="android"    gap:qualifier="mdpi" />
-    <icon src="res/icon/android/icon-72-hdpi.png"   platform="android"    gap:qualifier="hdpi" />
-    <icon src="res/icon/android/icon-96-xhdpi.png"  platform="android"    gap:qualifier="xhdpi" />
-    <icon src="res/icon/ios/icon-57.png"            platform="ios"        width="57" height="57" />
-    <icon src="res/icon/ios/icon-72.png"            platform="ios"        width="72" height="72" />
-    <icon src="res/icon/ios/icon-57-2x.png"         platform="ios"        width="114" height="114" />
-    <icon src="res/icon/ios/icon-72-2x.png"         platform="ios"        width="144" height="144" />
-    <icon src="res/icon/webos/icon-64.png"          platform="webos" />
-    <icon src="res/icon/windows-phone/icon-48.png"  platform="winphone" />
-    <icon src="res/icon/windows-phone/icon-173.png" platform="winphone"   gap:role="background" />
+    <preference name="orientation" value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
     
-     <splash src="splash.png" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="com.simplec.plugins.localnotification" />
 
-    <!-- Define app splash screen for each platform. -->
-    <splash src="res/screen/android/screen-ldpi-portrait.png"       platform="android" gap:qualifier="port-ldpi" />
-    <splash src="res/screen/android/screen-mdpi-portrait.png"       platform="android" gap:qualifier="port-mdpi" />
-    <splash src="res/screen/android/screen-hdpi-portrait.png"       platform="android" gap:qualifier="port-hdpi" />
-    <splash src="res/screen/android/screen-xhdpi-portrait.png"      platform="android" gap:qualifier="port-xhdpi" />
-    <splash src="res/screen/ios/screen-iphone-portrait.png"         platform="ios"     width="320" height="480" />
-    <splash src="res/screen/ios/screen-iphone-portrait-2x.png"      platform="ios"     width="640" height="960" />
-    <splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" platform="ios"     width="640" height="1136" />
-    <splash src="res/screen/ios/screen-ipad-portrait.png"           platform="ios"     width="768" height="1024" />
-    <splash src="res/screen/ios/screen-ipad-landscape.png"          platform="ios"     width="1024" height="768" />
-    <splash src="res/screen/windows-phone/screen-portrait.jpg"      platform="winphone" />
+    <icon src="res/icon.png" />
+	
+    <icon src="res/icons/ios/Icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="res/icons/ios/Icon@2x.png" gap:platform="ios" width="114" height="114" />    
+    <icon src="res/icons/ios/Icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="res/icons/ios/Icon-72@2x.png" gap:platform="ios" width="144" height="144" />
 
+    <icon src="res/icons/android/drawable-ldpi/icon.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="res/icons/android/drawable-mdpi/icon.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="res/icons/android/drawable-hdpi/icon.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="res/icons/android/drawable-xdpi/icon.png" gap:platform="android" gap:density="xhdpi" />
+	
+    <gap:splash src="splash.png" />
+    
+    <gap:splash src="res/screen/android/drawable-ldpi/splash.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="res/screen/android/drawable-mdpi/splash.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="res/screen/android/drawable-hdpi/splash.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="res/screen/android/drawable-xdpi/splash.png" gap:platform="android" gap:density="xhdpi" />
+    
+    <gap:splash src="res/screen/ios/Default.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="res/screen/ios/Default@2x.png" gap:platform="ios" width="680" height="960" />
+    <gap:splash src="res/screen/ios/Deafult-568h-2x.png" gap:platform="ios" width="640" height="1136" />
 
     <content src="http://seventhqueen.com/themes/kleo" />
     <access origin="*" subdomains="true" />
-    
 </widget>
