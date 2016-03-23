@@ -66,6 +66,8 @@
     <icon src="res/icon/webos/icon-64.png"          platform="webos" />
     <icon src="res/icon/windows-phone/icon-48.png"  platform="winphone" />
     <icon src="res/icon/windows-phone/icon-173.png" platform="winphone"   gap:role="background" />
+    
+     <splash src="splash.png" />
 
     <!-- Define app splash screen for each platform. -->
     <splash src="res/screen/android/screen-ldpi-portrait.png"       platform="android" gap:qualifier="port-ldpi" />
@@ -84,10 +86,9 @@
     </gap:config-file>
 
 
-        <access origin="http://seventhqueen.com/themes/kleo" />
-        <access origin="http://seventhqueen.com/themes/kleo" subdomains="true" />
-
-    <access origin="*"/>
+    <content src="http://seventhqueen.com/themes/kleo" />
+    <access origin="*" subdomains="true" />
+    
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
     <plugin name="cordova-plugin-whitelist" version="1" />
